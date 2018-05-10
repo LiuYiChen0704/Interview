@@ -6,11 +6,9 @@ public class MergeSort {
 	void merge(int arr[],int l,int m,int r){
 		int n1=m-l+1;
 		int n2=r-m;
-		
 		//create temp arrays
 		int L[]=new int[n1];
 		int R[]=new int[n2];
-		
 		//copy data to temp arrays
 		int i,j;
 		for(i=0;i<n1;i++)
@@ -18,8 +16,6 @@ public class MergeSort {
 		
 		for(j=0;j<n2;j++)
 			R[j]=arr[m+1+j];
-		
-		
 		i=0;
 		j=0;
 		int k=l;
@@ -42,11 +38,7 @@ public class MergeSort {
 			arr[k]=R[j];
 			j++;
 			k++;
-		}
-		
-		
-		
-		
+		}	
 	}
 	void sort(int arr[],int l,int r){
 		if(l<r){
